@@ -1,0 +1,49 @@
+.Svetofor {
+    width: 220px;
+    height: 663px;
+    border: 30px solid gray;
+    background-color: black;
+    border-radius: 30px;
+    margin-left: 200px; /* corrected from '200p' */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.Svetofor div {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 20px solid rgb(52, 52, 52);
+}
+
+#red {
+    background-color: red;
+    animation: redLight 20s infinite;
+}
+
+#yellow {
+    background-color: yellow;
+    animation: yellowLight 30s infinite;
+}
+
+#green {
+    background-color: green;
+    animation: greenLight 20s infinite;
+}
+
+@keyframes redLight {
+    0%, 33% { background-color:red; }
+    33.01%, 100% { background-color: gray; }
+}
+
+@keyframes yellowLight {
+    0%, 33%, 66% { background-color: gray; }
+    35%, 100% { background-color: yellow; }
+}
+
+@keyframes greenLight {
+    0%, 66% { background-color: gray; }
+    67.01%, 100% { background-color: green; }
+}
