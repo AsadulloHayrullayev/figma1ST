@@ -25,7 +25,7 @@
 
 #yellow {
     background-color: yellow;
-    animation: yellowLight 30s infinite;
+    animation: yellowLight 27s infinite;
 }
 
 #green {
@@ -40,10 +40,10 @@
 
 @keyframes yellowLight {
     0%, 33%, 66% { background-color: gray; }
-    35%, 100% { background-color: yellow; }
+    40.01%, 100% { background-color: rgb(166, 255, 0); }
 }
 
 @keyframes greenLight {
     0%, 66% { background-color: gray; }
-    67.01%, 100% { background-color: green; }
+    77.01%, 100% { background-color: green; }
 }
